@@ -1,0 +1,30 @@
+.container_pai{
+    background-color: darkviolet;
+    height: 500px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.container_pai div{
+    padding: 15px;
+}
+
+#container_f1{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+#container_f2{
+    background-color: white;
+    flex-grow: 5;
+}
+
+#container_f3{
+    background-color: red;
+    flex-grow: 1;
+}

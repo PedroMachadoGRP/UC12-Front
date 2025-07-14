@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    height: 10vh;
+    padding: 15px,0px,15px,0;
+    background-color: darkviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header img{
+    height: 75%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container-banner{
+    position: relative;
+    top: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6gqyLFNJa-N-_WoXFLD0zuA5911b8w-83sQ&s);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button img{
+    height: 60%;
+    width: 60%;
+}
+
+#perfil img{
+    padding: 5px;
+    height: 5vh;
+}
+
+#num{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+
+nav{
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+}

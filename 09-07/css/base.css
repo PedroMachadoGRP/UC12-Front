@@ -1,0 +1,64 @@
+/*
+    Estilo padrão para as paginas
+    Variaveis CSS (CSS Custo,)
+*/
+
+:root {
+    --cor-primaria: #3498db;
+    --cor-secundaria: #2c3e50;
+    --fonte-base: 'Arial',sans-serif;
+    --cor-fundo : rgb(34, 32, 32);
+    --cor-fonte:rgb(255, 247, 247);
+    --cor-confirm:rgba(99, 235, 99, 0.836);
+    --cor-cancel:rgb(206, 36, 36);
+    --small : 12px;
+    --regular: 32px;
+    --large: 64px;
+    --xLarge: 100px;
+}
+
+body {
+    font-family: var(--fonte-base);
+    font-size: var(--regular);
+    line-height: 1.5;
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    padding-top: 200px;
+}
+
+header{
+    background-color: var(--cor-secundaria);
+    width: 100%;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--cor-primaria);
+  }
+  
+  a {
+    color: var(--cor-fonte);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: var(--cor-primaria);
+    text-decoration: underline;
+  }
+  
+  p {
+    margin-bottom: 1em;
+  }
+
+button{
+    padding:10px 25px 10px 25px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

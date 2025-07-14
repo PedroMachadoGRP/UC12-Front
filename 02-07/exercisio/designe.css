@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+header{
+   background-color: darkblue;
+   color: white;
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   padding: 10px;
+}
+
+a{
+    color: white;
+    padding: 10px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: black;
+    color: white;
+}
+
+
+.hero img{
+    height: 25vh;
+    width: 10vw;
+}
+
+p{
+    font-family: 'Libertinus Mono';
+}
+
+button{
+    background-color: black;
+    color: white;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(24, 23, 23);
+}
+
+.projetos{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #00008b;
+    color: white;
+    
+}
+
+
+.projetos img{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 15%;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 15px;
+}
+
+@media(max-width: 768px){
+    header nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media(min-width : 768px) and (max-width:1024px){
+    header nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    
+}
+
+

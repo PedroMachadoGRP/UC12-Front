@@ -1,0 +1,21 @@
+.projetos{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--cor-secundaria);
+    flex-direction: column;
+    width: 30vw;
+    height: 65vh;
+}
+
+button{
+    transition: transform 1.0 ease;
+
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.09);
+}

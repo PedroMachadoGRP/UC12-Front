@@ -1,0 +1,15 @@
+/*
+Cuida do posicionamento e disposição dos elementos
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right:50px;
+    padding-bottom:25px;
+    padding-top: 25px;
+    position: fixed;
+    top: 0;
+}

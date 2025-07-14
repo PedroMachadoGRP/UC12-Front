@@ -1,0 +1,131 @@
+header{
+    display: flex;
+    background-color: gray;
+    color: burlywood;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+a{
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    height: 500px;
+}
+
+#main{
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+#banner{
+    background-image: url(imagens/Soul_Society.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+#banner div{
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.233);
+    text-align: center;
+    
+}
+
+#container-1 div{
+    padding: 110px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#container-1{
+    background-color: red;
+    border-radius: 15%;
+    text-align: center;
+    text-justify: auto;
+}
+
+#container-2 div{
+    padding: 110px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-2{
+    background-color: rgb(25, 0, 255);
+    border-radius: 15%;
+    text-align: center;
+    text-justify: auto;
+}
+
+#container-3 div{
+    padding: 110px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-3{
+    background-color: rgb(255, 238, 0);
+    border-radius: 15%;
+    text-align: center;
+    text-justify: auto;
+}
+
+.imgGrupos{
+    color: white;
+    background-color: purple;
+    padding: 25px;
+    border-radius: 15%;
+    text-align: center;
+    
+    
+}
+
+
+.grupos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 15px;
+    
+}
+
+.grupos imgGrupos{
+    border-radius: 15%;
+}
+
+
+footer{
+    display: flex;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#button{
+    background-color: rgba(255, 255, 255, 0.418);
+    border-color: rgba(255, 255, 255, 0.418) ;
+    text-decoration: none;
+}
+

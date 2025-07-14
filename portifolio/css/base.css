@@ -1,0 +1,95 @@
+:root{
+    --cor-fundo: black;
+    --cor-header:rgb(22, 20, 20);
+    --cor-fonte:#2e59b8;
+    --cor-link: rgb(253, 241, 241);
+    --cor-botoes: rgb(65, 32, 185);
+    --cor-secundaria: #30353a;
+    --fonte-base: 'Libertinus Mono';
+    --small : 12px;
+    --regular: 32px;
+    --large: 64px;
+    --xLarge: 100px;
+}
+
+
+body{
+    font-family: var(--fonte-base);
+    font-size: var(--regular);
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+}
+
+
+header{
+    background-color: var(--cor-header);
+    width: 100%;
+    transition: background-color 1s ease;
+}
+
+header a:hover{
+    transform: scale(1.5);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: var(--cor-fonte);
+}
+
+a{
+    color: var(--cor-link);
+    text-decoration: none;
+    
+}
+
+#perfil{
+    font-size: var(--small);
+}
+
+a:hover{
+    color: var(--cor-fonte);
+    text-decoration: underline;
+}
+
+.projetos:hover{
+    background-color: rgb(199, 140, 31);
+    cursor: pointer;
+}
+
+button{
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(26, 26, 36);
+}
+
+button:hover{
+    background-color: var(--cor-botoes);
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero img{
+    height: 50vh;
+    width: 32vw;
+}
+
+
+.container-projetos img{
+    height: 40vh;
+    width: 20vw;
+    border-radius: 15%;
+}
+
+#footer-links{
+    background-color: var(--cor-secundaria);
+}
+
+#sobre{
+    background-color: var(--cor-header);
+}

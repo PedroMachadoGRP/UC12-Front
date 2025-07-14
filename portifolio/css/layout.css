@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:300px;
+    padding: 150px;
+
+}
+
+
+
+.container-projetos{
+    display: flex;
+    padding:25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projetos{
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease;
+}
+
+.projetos:hover{
+    transform: scale(1.07);
+}
+
+
+#footer-links{
+    display: flex;
+    padding: 0.5px;
+    justify-content: space-around;
+}
+
+#perfil{
+    justify-content: space-around;
+}
+
+#sobre{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}

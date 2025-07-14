@@ -1,0 +1,50 @@
+header{
+    display: flex;
+    background-color: violet;
+    justify-content: space-between;
+    align-items: center;
+    /*Cima-Direita-baixo-esquerda*/
+    padding-right: 0px 15px 0px 15px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+#sobre{
+    background-color: darkred;
+}
+
+#produtos{
+    background-color: firebrick;
+}
+
+#depoimento{
+    background-color: darkblue;
+}
+
+#banner{
+    background-image: url(images.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+#banner div{
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 15;
+    border-radius: 50%;
+}

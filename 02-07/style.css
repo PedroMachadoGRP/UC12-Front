@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-principal);
+
+}
+
+:root {
+    --cor-principal: white;
+    --fonte-base: 'Arial', sans-serif;
+  }
+
+.showNav{
+    display: inline;
+    order: 4;
+    width: min-content;
+    margin: 5%;
+    font-size: 25px;
+}
+
+.show{
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Aplica estilo diferente quando a tela tiver 600 pixels ou menos*/
+@media(min-width : 600px){
+
+    header{
+        justify-content: center;
+        flex-direction: center;
+    }
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 1s ease;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    transform: transform 0.5s ease;
+}
+
+header a:hover{
+    transform: scale(1.1);
+}
+
+nav{
+    display: flex;
+    gap: 10px;
+    transition: max-height 0.5s ease, opacity 1s ease;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide-in {
+    from {transform: translateX(-100%); opacity: 0;}
+    to {transform: translateX(0); opacity: 1;}
+}
+
+@keyframes zoom-in {
+    from {transform: scale(0.5); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+
+
+.fade-in{
+    animation: fade-in 10s ease forwards;
+}
+
+.slide-in{
+    animation: slide-in 1s ease forwards;
+}
+
+.zoom-in{
+    animation: zoom-in 1s ease forwards;
+}
+
+.pulse {
+    animation: pulse 0.00001s infinite;
+  }
+
+  .girar {
+    animation: girar 0.1s linear infinite;
+  }
+
+  .digitando {
+    width: 22ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    animation: digita 3s steps(22), pisca 0.5s step-end infinite alternate;
+  }
+  
+  @keyframes digita {
+    from { width: 0; }
+    to { width: 22ch; }
+  }
+  
+  @keyframes pisca {
+    from { border-color: transparent; }
+    to { border-color: black; }
+  }
+
+  
+@media(max-width:1125px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .show{
+        display: flex;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+
+    nav.ativo{
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+#banner{
+    height: 80vh; /**/
+    background-image: url(https://images.pexels.com/photos/2031706/pexels-photo-2031706.jpeg);
+    position: center;
+}
+
+header.change{
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+#cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap :5rem;
+    padding: 25px 0px 25px 0px;
+}
+
+.card{
+    width: 20vw;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10xp;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+    transition: transform 0.5s ease;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 50vh;
+}
+
+.box{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.box.visible{
+    animation: fade-in 1s forwards;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+@media(min-width:600px){
+    .show{
+        display: none;
+    }
+}
+
+@media(max-width : 600px){
+    header nav{
+        display: flex;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }                   
+
+}    
+
+@media(min-width : 601px) and (max-width: 1025){
+    header nav{
+        display: none;
+    }
+
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
