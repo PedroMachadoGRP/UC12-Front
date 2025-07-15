@@ -1,0 +1,8 @@
+.btn{
+    background-color: blueviolet;
+}
+
+.btn:hover{
+    background-color: turquoise;
+    color: black;
+}
