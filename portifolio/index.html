@@ -5,41 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Robson</h1>
-        <nav id="header-link">
-            <a href="#">Contato</a>
-            <a href="#">Rede Sociais</a>
-            <a href="#">Projetos</a>
+        <h1 class="text-center text-primary">Robson</h1>
+        <nav id="header-link" class="navbar navbar-expand-lg navbar-dark bg-rgb(22, 20, 20)">
+            <a class="navbar-brand link-light" href="#">Contato</a>
+            <a class="navbar-brand" href="#">Rede Sociais</a>
+            <a class="navbar-brand" href="#">Projetos</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div id="perfil">
-                <h2 id="top">Oi!Sou Robson Fernando, Sou designer senior de mascotes</h2>
-                <p id="top">Trabalhei como desigener do McDonalds por 20 anos agora quero viver novas aventuras</p>
-                <button id="hero-button">Saiba mais</button>
+        <div class="card mb-4 bg-black" id="perfil">
+            <div class="row g-1">
+                <div class="col-md-4">
+                    <img src="https://cdnsjengenhariae.nuneshost.com/wp-content/uploads/2024/03/Chairman-Wang-dono-da-BYD.webp"
+                        class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 id="top">Oi!Sou Robson Fernando, Sou designer senior de mascotes</h2>
+                        <p id="top">Trabalhei como desigener do McDonalds por 20 anos agora quero viver novas aventuras
+                        </p>
+                        <button id="hero-button">Saiba mais</button>
+                    </div>
+                </div>
             </div>
-            <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/01/06/1776339291-monark.jpg"
-                alt="">
+        </div>
         </section>
 
         <section id="sobre">
-            <h2>Conhecimento gera conhecimento</h2>
-            <p>Em um mundo cada vez mais digital, o conhecimento em informática é uma habilidade valiosa, tanto para o
+            <h2 class="text-primary">Conhecimento gera conhecimento</h2>
+            <p class="text-primary text-center">Em um mundo cada vez mais digital, o conhecimento em informática é uma
+                habilidade valiosa, tanto para o
                 desenvolvimento pessoal quanto profissional. A capacidade de utilizar computadores e seus recursos de
                 forma eficaz não apenas facilita tarefas cotidianas, mas também amplia o acesso a informações, educação
                 e oportunidades de interação social e econômica</p>
-            <button class="btn btn-outline-secondary">Meus conhecimentos</button>
+            <button class="btn btn-outline-secondary" id="liveAlertBtn">Meus conhecimentos</button>
         </section>
 
 
@@ -48,22 +58,92 @@
                 <img src="https://image.winudf.com/v2/image1/Y29tLm1jZG9uYWxkcy5hbmRyb2lkX3NjcmVlbl8xXzE1ODA5MTg2NjJfMDgw/screen-1.jpg?fakeurl=1&type=.jpg"
                     alt="">
                 <h2>Fast-food <br> design</h2>
-                <button class="btn btn-outline-primary">Saiba mais</button>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1Modal">Saiba mais</button>
             </div>
             <div class="projetos">
                 <img src="https://cdn.dribbble.com/userupload/17453918/file/original-e94a99c57f0cd5b47a03a51fc2308eb1.jpg?crop=249x186-2952x2214&format=webp&resize=400x300&vertical=center"
                     alt="">
                 <h2>International <br> bank design</h2>
-                <button class="btn btn-outline-primary">Saiba mais</button>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card2Modal">Saiba mais</button>
             </div>
             <div class="projetos">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlFqxTKRyCLm0PXL4CjTn3SyouDKlj2jyx6g&s"
                     alt="">
                 <h2>Pet-shop <br> design</h2>
-                <button class="btn btn-outline-primary">Saiba mais</button>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card3Modal">Saiba mais</button>
             </div>
         </section>
+        
+        <div class="modal fade" id="card1Modal" tabindex="-1" aria-labelledby="card1ModalLabel" aria-hidden="true" >
+            <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content bg-dark text-primary">
+                    <div class="modal-header bg-dark">
+                  <h5 class="modal-title" id="card1ModalLabel">Designe McDonalds</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                  <p>
+                    Desenvolvi um projeto de design digital para o McDonald’s com base na identidade visual da marca, mas sem copiar o site oficial. Criei um layout próprio usando HTML, CSS e JavaScript, focando em uma navegação simples, cores características (vermelho e amarelo), e elementos visuais personalizados que remetem aos produtos da marca.
 
+                    O design é responsivo e inclui animações leves para melhorar a experiência do usuário. Todo o projeto foi feito do zero, como uma proposta criativa e independente, respeitando a essência da marca com um toque original.
+                  </p>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="modal fade" id="card2Modal" tabindex="-1" aria-labelledby="card1ModalLabel" aria-hidden="true" >
+            <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content bg-dark text-primary">
+                <div class="modal-header bg-dark">
+                  <h5 class="modal-title" id="card1ModalLabel">International
+                    bank design</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                  <p>
+                    Desenvolvi um projeto de design digital para um banco internacional, criando uma interface moderna e funcional que reflete a imagem de segurança e confiança da instituição. Utilizei HTML, CSS e JavaScript para criar um layout intuitivo e responsivo, com foco em uma navegação simples e acessível.
+
+                    A paleta de cores foi escolhida para transmitir profissionalismo, com tons de azul e cinza predominando. Além disso, adicionei animações sutis e elementos gráficos personalizados, garantindo que a experiência do usuário fosse fluida e agradável. O design foi feito do zero, sem se basear em nenhum modelo existente, respeitando a identidade visual do banco enquanto trouxe uma abordagem inovadora e eficiente para os serviços digitais.
+                  </p>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="card3Modal" tabindex="-1" aria-labelledby="card1ModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" >
+              <div class="modal-content bg-dark text-primary">
+                <div class="modal-header bg-dark">
+                  <h5 class="modal-title" id="card1ModalLabel">Pet-shop
+                    design</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  
+                  <p>
+                    Desenvolvi um projeto de design digital para um pet shop, com o objetivo de criar uma experiência agradável e intuitiva para os donos de animais. Utilizando HTML, CSS e JavaScript, criei uma interface colorida e amigável, com um layout focado na navegação fácil e visual atraente para os visitantes.
+
+A paleta de cores foi inspirada em tons vibrantes e naturais, como verde, laranja e azul, que remetem ao universo dos pets. Além disso, adicionei animações divertidas e interativas, como destaque em produtos e categorias, para tornar a experiência mais dinâmica. O design é responsivo e foi criado do zero, respeitando a identidade do pet shop, ao mesmo tempo em que traz uma abordagem inovadora para facilitar a compra de produtos e serviços.
+                  </p>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <footer>
             <nav id="footer-links">
                 <a href="#">Instagram</a>
@@ -73,10 +153,14 @@
         </footer>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

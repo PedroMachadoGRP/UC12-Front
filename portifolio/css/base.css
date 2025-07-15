@@ -43,7 +43,8 @@ a{
 }
 
 #perfil{
-    font-size: var(--small);
+    font-size: var(--regular);
+    padding: 100px;
 }
 
 a:hover{
@@ -52,8 +53,9 @@ a:hover{
 }
 
 .projetos:hover{
-    background-color: rgb(199, 140, 31);
+    background-color: rgb(46, 46, 46);
     cursor: pointer;
+    
 }
 
 button{
