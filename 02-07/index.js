@@ -4,8 +4,7 @@ const header = document.querySelector('header');
 
 menu.addEventListener('click', () => {
     nav.classList.toggle('showNav');
-    nav.classList.toggle('ativo')
-
+    nav.classList.toggle('ativo');
 });
 
 window.addEventListener('scroll',() => {
