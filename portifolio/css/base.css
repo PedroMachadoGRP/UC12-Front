@@ -1,12 +1,14 @@
 :root{
-    --cor-fundo: black;
-    --cor-header:rgb(22, 20, 20);
-    --cor-fonte:#2e59b8;
+    --cor-fundo: rgb(17, 14, 14);
+    --cor-header:rgba(22, 20, 20, 0);
+    --cor-fonte-primaria:#4d34e2;
+    --cor-fonte-secundaria:rgb(223, 209, 209);
     --cor-link: rgb(253, 241, 241);
-    --cor-botoes: rgb(65, 32, 185);
+    --cor-botoes: rgb(120, 91, 223);
     --cor-secundaria: #30353a;
     --fonte-base: 'Libertinus Mono';
     --small : 12px;
+    --xsmall:24px;
     --regular: 32px;
     --large: 64px;
     --xLarge: 100px;
@@ -17,8 +19,13 @@ body{
     font-family: var(--fonte-base);
     font-size: var(--regular);
     background-color: var(--cor-fundo);
-    color: var(--cor-fonte);
+    color: var(--cor-fonte-primaria);
 }
+
+.card{
+    background-color: rgb(22, 21, 21);
+}
+
 
 
 header{
@@ -33,7 +40,16 @@ header a:hover{
 
 h1,h2,h3,h4,h5,h6{
     font-weight: 600;
-    color: var(--cor-fonte);
+    color: var(--cor-fonte-secundaria);
+}
+
+main{
+    background-color: var(--cor-header);
+}
+
+p{
+    font-size: var(--xsmall);
+    color: var(--cor-fonte-primaria);
 }
 
 a{
@@ -47,8 +63,12 @@ a{
     padding: 100px;
 }
 
+#perfil img{
+    border-color: var(--cor-fonte-primaria);
+}
+
 a:hover{
-    color: var(--cor-fonte);
+    color: var(--cor-fonte-primaria);
     text-decoration: underline;
 }
 
@@ -58,22 +78,28 @@ a:hover{
     
 }
 
+
+
 button{
-    padding: 10px 25px 10px 25px;
+    padding: 5px 10px 5px 10px;
     border: none;
     border-width: 5px;
-    border-radius: 10px;
+    border-radius: 25px;
     box-shadow: 0 4px 10px rgb(26, 26, 36);
 }
 
 button:hover{
     background-color: var(--cor-botoes);
-
+    color: var(--cor-fonte-secundaria);
 }
 
 img{
     max-width: 100%;
     height: auto;
+}
+
+#top{
+    color: var(--cor-fonte-primaria);
 }
 
 .hero img{
