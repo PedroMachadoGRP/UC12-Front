@@ -5,7 +5,7 @@ import './Botao.css'
 function Botao(prop) {
   return (
     <button id='orange-btn'>
-        {prop.texto}
+    {prop.texto}
     </button>
   )
 }

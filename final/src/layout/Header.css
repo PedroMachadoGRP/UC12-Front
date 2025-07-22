@@ -2,9 +2,10 @@
     background-color: white;
     color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
+    font-family: 'Manrope',sans-serif;
     
 }
 
@@ -12,4 +13,20 @@ a{
     text-decoration: none;
     color: black;
     padding: 0px 0px 0px 32px;
+    transition: background-color 1s ease ;
+}
+
+a:hover{
+    color: #E45400;
+    transform: transform 0.5s ease;
+
+}
+
+#botoes{
+    display: flex;
+    gap: 7px;
+}
+
+#imagem{
+    height: 5vh;
 }

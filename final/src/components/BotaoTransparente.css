@@ -1,0 +1,16 @@
+#trans-btn{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    display: inline-block;
+    padding: 12px 36px 12px 36px;
+    border-radius: 5px;
+    gap: 15px;
+    border-width: 0.1px; 
+    border-color: gray;
+
+}
+
+#trans-btn:hover{
+    background-color: #E45400;
+    color: white;
+}
