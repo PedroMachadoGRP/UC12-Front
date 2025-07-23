@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './layout/Header'
 import Banner from './layout/Banner'
+import Destination from './layout/Destination'
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
     <>
     <Header/>
     <Banner/>
+    <Destination/>
+    
     </>
   )
 }
