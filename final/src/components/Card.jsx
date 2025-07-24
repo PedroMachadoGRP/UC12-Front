@@ -2,11 +2,22 @@ import React from 'react'
 import './Card.css'
 
 
-function Card() {
+function Card(prop) {
   return (
     <>
     <div id='card'>
-    <img src="https://live.sociolib.com/nomad/wp-content/uploads/sites/15/2025/07/matheen-faiz-OcrTk7qXcdM.webp" alt="" />
+      <div id='image'>
+        <img src = {prop.image}/>
+        <p>{prop.cardNum}</p>
+      </div>
+      <div id='info'>
+        <h5>
+        Diving and Snorkeling
+        </h5>
+        <p>
+        The travel package includes lending services for diving and snorkeling equipment
+        </p>
+      </div>
     </div>
     </>
   )

@@ -1,3 +1,54 @@
 #card{
-    height: 10px;
+    display: flex;
+    border-width: 1px 1px 1px 1px;
+    border-color: #EDEDED;
+    border-radius: 20px;
+    flex-direction: column;
+    width: 15%;
+    border: solid #EDEDED;
+    gap: 36px 36px;
+}
+
+#image img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    height: 50px;
+    flex-direction: row;
+    border: solid #EDEDED;
+    background-color: #FAFAFA;
+    border-radius: 40px;
+    border-width: 1px 1px 1px 1px;
+}
+
+#image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+}
+
+
+
+
+#info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+
+#image p{
+    font-size: 20px;
+}
+
+#info h5{
+    font-size: 24px;
+}
+
+#info p{
+    font-size: 16px;
 }

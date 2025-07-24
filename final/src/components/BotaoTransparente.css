@@ -12,5 +12,6 @@
 
 #trans-btn:hover{
     background-color: #E45400;
+    border-color: #E45400 ;
     color: white;
 }
