@@ -7,7 +7,8 @@ function Banner() {
             <div id='banner'>
                 <div id='banner-menor'>
                 <h1>Less Hassle, <br /> More Fun.</h1>
-                <p>Discover a new way to travel that’s fun, easy, and stress-free <br />Turn your dream destinations into unforgettable realities</p>
+                <p className='descricao'>Discover a new way to travel that’s fun, easy, and stress-free</p>
+                <p className='descricao'>Turn your dream destinations into unforgettable realities</p>
                 </div>
 
                 <div id='banner-maior'>

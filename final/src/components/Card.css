@@ -1,11 +1,12 @@
 #card{
-    display: flex;
+    background-color: white;
     border-width: 1px 1px 1px 1px;
     border-color: #EDEDED;
     border-radius: 20px;
     flex-direction: column;
-    width: 15%;
-    border: solid #EDEDED;
+    width: 100%;
+    height: auto;
+    border: 1px solid #EDEDED;
     gap: 36px 36px;
 }
 
@@ -17,7 +18,7 @@
     padding: 1em;
     height: 50px;
     flex-direction: row;
-    border: solid #EDEDED;
+    border: 1px solid #EDEDED;
     background-color: #FAFAFA;
     border-radius: 40px;
     border-width: 1px 1px 1px 1px;

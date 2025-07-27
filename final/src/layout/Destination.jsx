@@ -14,6 +14,12 @@ function Destination() {
 
                 <section id='destinos'>
                     <div className='locals'>
+
+                        <div className='country'>
+                            <img src="https://s.w.org/images/core/emoji/16.0.1/svg/1f1f0-1f1ff.svg" alt="" />
+                            <p>Kazakhstan</p>
+                        </div>
+
                         <img src="https://live.sociolib.com/nomad/wp-content/uploads/sites/15/2025/07/colin-watts-M1ObxvsWVhY.webp" alt="" />
                         <h5>Caspian Sea Beach, Aktau</h5>
                         <p>A Unique Seaside Escape in Central Asia</p>
