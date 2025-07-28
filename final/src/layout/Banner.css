@@ -1,5 +1,10 @@
+*{
+    
+}
+
 #banner{
     display: flex;
+    position: relative;
     background-image: url(https://live.sociolib.com/nomad/wp-content/uploads/sites/15/2025/07/romantic-sunset-on-a-tropical-beach-with-palm-tree-2025-01-08-10-37-11-utc-1.webp);
     border-radius: 15px;
     background-position: center;
@@ -20,17 +25,20 @@
 
 
 #banner-menor{
+    position: relative;
     color: white;
     text-align: left;
     max-width: 600px;
-    
+    bottom: 120px;
+    right: 165px;
 }
 
 #banner-menor h1{
-    font-size: 110px;
+    font-size: 100px;
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
+    font-weight: 600;
 }
 
 #banner-menor .descricao{

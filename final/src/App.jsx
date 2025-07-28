@@ -6,6 +6,7 @@ import Header from './layout/Header'
 import Banner from './layout/Banner'
 import Destination from './layout/Destination'
 import Information from './layout/Information'
+import Experiences from './layout/Experiences'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Banner/>
     <Destination/>
     <Information/>
+    <Experiences/>
     </>
   )
 }

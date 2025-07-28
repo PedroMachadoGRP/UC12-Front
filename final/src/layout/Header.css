@@ -13,7 +13,7 @@ a{
     text-decoration: none;
     color: black;
     padding: 0px 0px 0px 32px;
-    transition: background-color 1s ease ;
+    transition: color 0.3s ease ;
 }
 
 a:hover{

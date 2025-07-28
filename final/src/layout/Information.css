@@ -30,10 +30,10 @@
 #both {
     display: flex;
     flex-wrap: nowrap;
-    gap: 40px;
+    gap: 80px;
     justify-content: space-between;
     align-items: stretch;
-    width: 100%;
+    width: 120%;
 
 }
 
@@ -60,11 +60,12 @@
 }
 
 #information-elements {
+    position: relative;
     padding: 4rem 11%;
-    width: 100%;
+    width: 100vw;
     max-width: 1400px;
-    background-color: rgba(211, 211, 211, 0.137);
     box-sizing: border-box;
+    right: 80px;
 }
 
 

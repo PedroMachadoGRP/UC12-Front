@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import Botao from '../components/botao'
+import Botao from '../components/Botao'
 import BotaoTransparente from '../components/BotaoTransparente'
 
 function Header() {

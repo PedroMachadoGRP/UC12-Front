@@ -3,7 +3,7 @@ import './BotaoTransparente.css'
 
 function BotaoTransparente(prop) {
   return (
-    <button id='trans-btn'>
+    <button id='trans-btn' className='btn'>
         {prop.tranTexto}
     </button>
   )

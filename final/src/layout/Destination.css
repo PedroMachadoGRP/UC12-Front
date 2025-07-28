@@ -24,6 +24,7 @@
 
 .locals {
     display: flex;
+    position: relative;
     flex-direction: column;
     border: solid #EDEDED;
     flex-wrap: wrap;
@@ -37,12 +38,38 @@
 
 }
 
+.locals button{
+    position: relative;
+    bottom: 60px;
+    left: 60px;
+}
+
+.country{
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: white;
+    top: 190px;
+    left: 45px;
+    width: 20vw;
+    
+
+}
+
+
 .locals h5{
     font-size: 25px;
+    font-weight: 500;
+    
 }
 
 .locals p{
     font-size:14px;
+    font-weight: 500;
+    line-height: 1.4em;
 }
 
 .locals span{

@@ -1,12 +1,12 @@
 #orange-btn{
     background-color: #FF7526;
-    color: white;
+    color: #FFFFFF;
     display: inline-block;
     padding: 12px 36px 12px 36px;
     border-radius: 5px;
     gap: 15px;
-    border: 0;
-
+    border: 0 solid;
+    transition: all 0.3s;
 }
 
 #orange-btn:hover{
