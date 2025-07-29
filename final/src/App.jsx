@@ -7,6 +7,7 @@ import Banner from './layout/Banner'
 import Destination from './layout/Destination'
 import Information from './layout/Information'
 import Experiences from './layout/Experiences'
+import NextDestination from './layout/NextDestination'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <Destination/>
     <Information/>
     <Experiences/>
+    <NextDestination/>
     </>
   )
 }

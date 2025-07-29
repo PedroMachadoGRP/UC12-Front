@@ -7,12 +7,15 @@ function Experiences() {
   return (
     <div id='experiences'>
         <div id='header'>
-            <h2>Where Comfort Meets  Convenience — Our Top Stay  Picks for You</h2>
+            <h2>Where Comfort Meets <br />  Convenience — Our Top Stay <br />  Picks for You</h2>
             <Botao texto='Book Now' />
         </div>
 
-
-    /<Carousel/>
+      <div id='carrosel'>
+        <Carousel/>
+      </div>
+    
+   
         
     </div>
   )
