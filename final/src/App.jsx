@@ -8,6 +8,7 @@ import Destination from './layout/Destination'
 import Information from './layout/Information'
 import Experiences from './layout/Experiences'
 import NextDestination from './layout/NextDestination'
+import FAQ from './layout/FAQ'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <Information/>
     <Experiences/>
     <NextDestination/>
+    <FAQ/>
     </>
   )
 }

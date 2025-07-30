@@ -1,0 +1,31 @@
+#faq-header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#accordion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+}
+
+#accordion .accordion-title{
+    font-size: 24px
+}
+
+#accordion .accordion-content{
+    font-size: 16px;
+}
+
+#faq-header h3{
+    font-size: 56px;
+}
+
+#faq-header p{
+    font-size: 18px;
+    color: #6C6C6C;
+}
